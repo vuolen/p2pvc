@@ -1,0 +1,33 @@
+{
+  "name": "p2pvc",
+  "version": "1.0.0",
+  "description": "A peer-to-peer video call",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npx spago install",
+    "dev": "DEV=true node esbuild.js & npx spago build --watch",
+    "build": "npx spago build && node esbuild.js",
+    "test": "npx spago test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuolen/p2pvc.git"
+  },
+  "keywords": [
+    "video",
+    "call",
+    "p2p"
+  ],
+  "author": "Lennu Vuolanne",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/vuolen/p2pvc/issues"
+  },
+  "homepage": "https://github.com/vuolen/p2pvc#readme",
+  "dependencies": {
+    "esbuild": "^0.12.25",
+    "esbuild-plugin-purescript": "^1.1.1",
+    "purescript": "^0.14.4",
+    "spago": "^0.20.3"
+  }
+}
